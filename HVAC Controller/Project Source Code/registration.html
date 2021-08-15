@@ -1,0 +1,36 @@
+<html>
+<head>	
+		<link rel="shortcut icon" href="res/favicon.png"  type="image/x-icon">
+       <title> i-HVAC</title>
+       	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+       	<script src="main.js"></script>
+       	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+<body style="background:linear-gradient(to bottom, rgba(226,226,226,1) 25%,rgba(209,209,209,1) 87%,rgba(219,219,219,1) 98%);background-repeat : no-repeat; background-size: cover; color: white;font-family:sans-serif;
+margin: 0px;">
+<center>
+<header id="myHead"></header>
+
+	<div style="box-shadow: 2px 5px 15px 2px black; width : 500px; height: 300px; padding: 10px 20px 120px 20px; background: #003366;color:white; border-radius: 0px 40px 0px 40px; margin-top: 10px;">
+		<h3 style="color:white;font-size: 30px;"> Register Your Central Hub Device</h3>
+		<form id="reg_form" >
+		Username &nbsp<input id="username" type="text" placeholder="Username" class="inputs" required="required"><br><br>
+
+		Password &nbsp<input id="password" type="password" placeholder="Password" class="inputs" required="required"><br><br>
+
+		Device ID <input id="dev_id" type="text" placeholder="Device ID" class="inputs" required="required"><br><br>
+		    
+		<input type="button" value="Register" class="button2" style="margin-left: 78px !important; width: 145px" onclick = "cloudDBInsert()">
+		<input type="reset" value="Reset" class="button2" style="margin-left: 0px; width: 145px">
+		</form>
+		Already have an account? <a href="login.html" class="link">Login here</a>
+	</div>
+
+<footer id="my_footer" style="margin-top: 37px;"></footer>
+
+<script src="header.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>
